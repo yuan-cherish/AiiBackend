@@ -1,5 +1,13 @@
 server:
   port: 8081
+  ssl:
+    enabled: true
+    key-store: classpath:tomcat.keystore
+    key-store-type: JKS
+    key-password: 1008wuxing
+    key-store-password: 1008wuxing
+    key-alias: tomcat
+
 
 spring:
   datasource:
@@ -25,3 +33,5 @@ mybatis-plus:
   mapper-locations: classpath:mapper.*/*.xml    # 扫描所有mybatis的xml文件
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# https
