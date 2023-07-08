@@ -1,12 +1,14 @@
 server:
-  port: 8081
   ssl:
     enabled: true
-    key-store: classpath:tomcat.keystore
+    key-store: classpath:server.keystore
     key-store-type: JKS
     key-password: 1008wuxing
     key-store-password: 1008wuxing
     key-alias: tomcat
+  port: 8083
+  http:
+    port: 8081
 
 
 spring:
